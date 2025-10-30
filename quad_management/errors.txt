@@ -1,0 +1,250 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldBase has been called by com.google.inject.internal.aop.HiddenClassDefiner (file:/opt/homebrew/Cellar/maven/3.9.11/libexec/lib/guice-5.1.0-classes.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.inject.internal.aop.HiddenClassDefiner
+WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.quadmgmt:quad-management >--------------------
+[INFO] Building Quad Management (all-in-one) 0.2.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ quad-management ---
+[INFO] Deleting /Users/atuldaby/repo/Java/Quad V3/quad_management/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ quad-management ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ quad-management ---
+[INFO] Changes detected - recompiling the module! :source
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 35 source files with javac [debug release 17] to target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ quad-management ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ quad-management ---
+[INFO] Changes detected - recompiling the module! :dependency
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 11 source files with javac [debug release 17] to target/test-classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[21,26] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[21,34] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[21,37] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[21,42] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[21,45] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[21,53] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[21,56] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[21,62] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,29] ')' or ',' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,37] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,40] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,43] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,46] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,51] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,57] illegal start of expression
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,69] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,72] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,80] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,83] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,89] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,92] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,96] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,99] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,107] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[44,29] ')' or ',' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[44,47] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[44,54] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[44,57] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[44,60] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[44,65] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[44,81] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[50,29] ')' or ',' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[50,35] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[50,38] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[50,49] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,29] ')' or ',' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,35] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,40] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,53] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,58] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,67] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,84] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,86] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,92] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,99] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,116] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,118] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[21,26] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[21,34] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[21,37] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[21,40] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[21,43] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[21,51] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[21,54] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[21,60] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,29] ')' or ',' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,37] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,40] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,41] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,44] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,49] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,53] illegal start of expression
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,60] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,63] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,71] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,74] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,75] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,78] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,82] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,85] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,93] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[53,29] ')' or ',' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[53,47] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[53,54] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[53,57] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[53,60] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[53,65] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[53,81] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[57,29] ')' or ',' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[57,35] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[57,38] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[57,49] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,29] ')' or ',' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,35] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,40] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,53] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,58] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,67] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,84] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,86] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,92] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,99] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,116] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,118] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AuthAndTokenFlowTests.java:[23,26] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AuthAndTokenFlowTests.java:[23,34] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AuthAndTokenFlowTests.java:[23,45] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AuthAndTokenFlowTests.java:[23,53] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AuthAndTokenFlowTests.java:[41,29] ')' or ',' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AuthAndTokenFlowTests.java:[41,37] ';' expected
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.416 s
+[INFO] Finished at: 2025-10-29T14:49:26+04:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:testCompile (default-testCompile) on project quad-management: Compilation failure: Compilation failure: 
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[21,26] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[21,34] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[21,37] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[21,42] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[21,45] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[21,53] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[21,56] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[21,62] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,29] ')' or ',' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,37] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,40] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,43] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,46] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,51] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,57] illegal start of expression
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,69] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,72] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,80] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,83] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,89] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,92] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,96] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,99] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[34,107] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[44,29] ')' or ',' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[44,47] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[44,54] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[44,57] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[44,60] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[44,65] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[44,81] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[50,29] ')' or ',' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[50,35] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[50,38] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[50,49] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,29] ')' or ',' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,35] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,40] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,53] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,58] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,67] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,84] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,86] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,92] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,99] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,116] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AdminRBACTests.java:[65,118] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[21,26] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[21,34] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[21,37] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[21,40] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[21,43] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[21,51] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[21,54] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[21,60] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,29] ')' or ',' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,37] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,40] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,41] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,44] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,49] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,53] illegal start of expression
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,60] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,63] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,71] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,74] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,75] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,78] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,82] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,85] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[33,93] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[53,29] ')' or ',' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[53,47] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[53,54] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[53,57] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[53,60] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[53,65] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[53,81] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[57,29] ')' or ',' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[57,35] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[57,38] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[57,49] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,29] ')' or ',' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,35] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,40] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,53] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,58] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,67] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,84] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,86] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,92] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,99] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,116] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/OperatorRBACTests.java:[70,118] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AuthAndTokenFlowTests.java:[23,26] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AuthAndTokenFlowTests.java:[23,34] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AuthAndTokenFlowTests.java:[23,45] not a statement
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AuthAndTokenFlowTests.java:[23,53] ';' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AuthAndTokenFlowTests.java:[41,29] ')' or ',' expected
+[ERROR] /Users/atuldaby/repo/Java/Quad V3/quad_management/src/test/java/com/quadmgmt/security/AuthAndTokenFlowTests.java:[41,37] ';' expected
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

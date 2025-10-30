@@ -1,0 +1,17 @@
+package com.quadmgmt.domain.service;
+import com.quadmgmt.TestClockConfig; import com.quadmgmt.domain.model.Booking; import com.quadmgmt.domain.model.enums.BookingStatus; import com.quadmgmt.persistence.repository.BookingRepository;
+import org.junit.jupiter.api.Test; import org.junit.jupiter.api.extension.ExtendWith; import org.springframework.beans.factory.annotation.Autowired; import org.springframework.boot.test.context.SpringBootTest; import org.springframework.context.annotation.Import; import org.springframework.test.context.junit.jupiter.SpringExtension; import org.springframework.transaction.annotation.Transactional;
+import java.time.Clock; import java.time.LocalDateTime; import static org.junit.jupiter.api.Assertions.*;
+@SpringBootTest @ExtendWith(SpringExtension.class) @Import(TestClockConfig.class) @Transactional
+class BookingServiceTests {
+  @Autowired BookingService bookingService; @Autowired BookingRepository bookingRepository; @Autowired Clock clock;
+  private LocalDateTime baseStart() { return LocalDateTime.now(clock).plusHours(2); }
+  @Test void createBooking_success() { var start=baseStart(); var end=start.plusHours(2); Booking b=bookingService.createBooking(2L,2,start,end); assertNotNull(b.getId()); assertEquals(2,b.getNumberOfQuads()); assertEquals(2,b.getTotalHours()); assertEquals(BookingStatus.PENDING,b.getStatus()); assertEquals(2,b.getQuads().size()); }
+  @Test void backToBack_isAllowed() { var start=baseStart(); var end=start.plusHours(2); var b1=bookingService.createBooking(2L,3,start,end); assertNotNull(b1.getId()); var b2=bookingService.createBooking(2L,3,end,end.plusHours(2)); assertNotNull(b2.getId()); }
+  @Test void overlappingWithInsufficientInventory_isRejected() { var start=baseStart(); var end=start.plusHours(4); var b1=bookingService.createBooking(2L,8,start,end); assertNotNull(b1.getId()); var ex=assertThrows(IllegalStateException.class, ()-> bookingService.createBooking(2L,5,start.plusMinutes(30), end.minusMinutes(30))); assertTrue(ex.getMessage().toLowerCase().contains("insufficient")); }
+  @Test void pastBooking_isRejected() { var start=LocalDateTime.now(clock).minusHours(1); var end=start.plusHours(2); assertThrows(IllegalArgumentException.class, ()-> bookingService.createBooking(2L,1,start,end)); }
+  @Test void minDuration_lessThanOneHour_isRejected() { var start=baseStart(); var end=start.plusMinutes(30); assertThrows(IllegalArgumentException.class, ()-> bookingService.createBooking(2L,1,start,end)); }
+  @Test void maxDuration_moreThan24Hours_isRejected() { var start=baseStart(); var end=start.plusHours(25); assertThrows(IllegalArgumentException.class, ()-> bookingService.createBooking(2L,1,start,end)); }
+  @Test void endBeforeStart_isRejected() { var start=baseStart(); var end=start.minusHours(1); assertThrows(IllegalArgumentException.class, ()-> bookingService.createBooking(2L,1,start,end)); }
+  @Test void cancelPending_succeeds_but_cancelCompleted_fails() { var start=baseStart(); var end=start.plusHours(2); var b=bookingService.createBooking(2L,1,start,end); Long id=b.getId(); bookingService.cancelBooking(id); var after=bookingRepository.findById(id).orElseThrow(); assertEquals(BookingStatus.CANCELLED, after.getStatus()); var completed=bookingService.createBooking(2L,1,start.plusHours(4), end.plusHours(4)); completed.setStatus(BookingStatus.COMPLETED); bookingRepository.save(completed); assertThrows(IllegalStateException.class, ()-> bookingService.cancelBooking(completed.getId())); }
+}

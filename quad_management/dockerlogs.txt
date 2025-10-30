@@ -1,0 +1,159 @@
+ docker-compose up --build      
+WARN[0000] /Users/atuldaby/repo/Java/Quad V3/quad_management/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+[+] Building 101.2s (18/18) FINISHED                                                                                                                             
+ => [internal] load local bake definitions                                                                                                                  0.0s
+ => => reading from stdin 571B                                                                                                                              0.0s
+ => [internal] load build definition from Dockerfile                                                                                                        0.0s
+ => => transferring dockerfile: 510B                                                                                                                        0.0s
+ => [internal] load metadata for docker.io/library/eclipse-temurin:17-jre                                                                                   4.2s
+ => [internal] load metadata for docker.io/library/maven:3.9-eclipse-temurin-17                                                                             3.6s
+ => [auth] library/eclipse-temurin:pull token for registry-1.docker.io                                                                                      0.0s
+ => [auth] library/maven:pull token for registry-1.docker.io                                                                                                0.0s
+ => [internal] load .dockerignore                                                                                                                           0.0s
+ => => transferring context: 231B                                                                                                                           0.0s
+ => [build 1/5] FROM docker.io/library/maven:3.9-eclipse-temurin-17@sha256:e195e8dfd27ff4a52388c590d3c6042529d9b28034f0342e4a70190951066752                44.5s
+ => => resolve docker.io/library/maven:3.9-eclipse-temurin-17@sha256:e195e8dfd27ff4a52388c590d3c6042529d9b28034f0342e4a70190951066752                       0.0s
+ => => sha256:ebe8cfc84f39149d60e98573d21310d9d94c1d9f9257898d96eadb58606eb3bb 155B / 155B                                                                  1.0s
+ => => sha256:149ec7c1c3fb4c551ed65d1f47eb2d03b91f79face9b610173a8f5f2e1ee7291 356B / 356B                                                                  1.1s
+ => => sha256:65eb11c2a9a183eafac3d27adf0724e348480634dfd454fbe37890d568fc885e 850B / 850B                                                                  1.1s
+ => => sha256:0cd360f6285c403004ba1b1a1a9945827720fcd695bfca0868232fc88a1e60ce 22.61MB / 22.61MB                                                           13.9s
+ => => sha256:39f080a0fc8e2133c8f836b30e3970826d42e6606023ea8354f51421fe683fd0 9.24MB / 9.24MB                                                              6.5s
+ => => sha256:c83cc141ae9dce493b1ce81964685a6e1175f2af23af8b34361d880ea6f00b22 161B / 161B                                                                  1.3s
+ => => sha256:e7d87afbcfc14095e853747a87b97d28c2d95f80c49875321c24e2481bd23c1a 143.55MB / 143.55MB                                                         30.2s
+ => => sha256:ddb1a2e5b6a241bd476a411ba9d7661316ac643cc0deb130a4683e97dc10172d 24.17MB / 24.17MB                                                            9.3s
+ => => extracting sha256:ddb1a2e5b6a241bd476a411ba9d7661316ac643cc0deb130a4683e97dc10172d                                                                   0.4s
+ => => extracting sha256:e7d87afbcfc14095e853747a87b97d28c2d95f80c49875321c24e2481bd23c1a                                                                   1.0s
+ => => extracting sha256:c83cc141ae9dce493b1ce81964685a6e1175f2af23af8b34361d880ea6f00b22                                                                   0.0s
+ => => extracting sha256:ff877827746c75e773edd6beba96ca65186a1940ef3ec984a75ea4938c838408                                                                   0.0s
+ => => extracting sha256:0cd360f6285c403004ba1b1a1a9945827720fcd695bfca0868232fc88a1e60ce                                                                   0.4s
+ => => extracting sha256:39f080a0fc8e2133c8f836b30e3970826d42e6606023ea8354f51421fe683fd0                                                                   0.1s
+ => => extracting sha256:65eb11c2a9a183eafac3d27adf0724e348480634dfd454fbe37890d568fc885e                                                                   0.0s
+ => => extracting sha256:149ec7c1c3fb4c551ed65d1f47eb2d03b91f79face9b610173a8f5f2e1ee7291                                                                   0.0s
+ => => extracting sha256:ebe8cfc84f39149d60e98573d21310d9d94c1d9f9257898d96eadb58606eb3bb                                                                   0.0s
+ => [internal] load build context                                                                                                                           0.0s
+ => => transferring context: 125.39kB                                                                                                                       0.0s
+ => [stage-1 1/3] FROM docker.io/library/eclipse-temurin:17-jre@sha256:696817d4fb79b9c442e84e18483d8345dd2d0b6710546344e5eb182bd3153333                    24.4s
+ => => resolve docker.io/library/eclipse-temurin:17-jre@sha256:696817d4fb79b9c442e84e18483d8345dd2d0b6710546344e5eb182bd3153333                             0.0s
+ => => sha256:ff877827746c75e773edd6beba96ca65186a1940ef3ec984a75ea4938c838408 2.28kB / 2.28kB                                                              1.2s
+ => => sha256:06b0498b4b733bb180cbee71265b5020a1d27e00bd9135a2ce51030acb4ab964 158B / 158B                                                                  1.4s
+ => => sha256:200d1e8b8d3e5855f501ce5948c54f32e379dedbdbec90fddda1715bbd374e99 46.48MB / 46.48MB                                                           23.8s
+ => => sha256:312e790569549230098ac0b85712def4939ffbb47bd38c25be030afb0ea2323d 16.99MB / 16.99MB                                                            4.9s
+ => => sha256:b8a35db46e38ce87d4e743e1265ff436ed36e01d23246b24a1cbbeaae18ec432 28.86MB / 28.86MB                                                           15.2s
+ => => extracting sha256:b8a35db46e38ce87d4e743e1265ff436ed36e01d23246b24a1cbbeaae18ec432                                                                   0.5s
+ => => extracting sha256:312e790569549230098ac0b85712def4939ffbb47bd38c25be030afb0ea2323d                                                                   0.3s
+ => => extracting sha256:200d1e8b8d3e5855f501ce5948c54f32e379dedbdbec90fddda1715bbd374e99                                                                   0.5s
+ => => extracting sha256:06b0498b4b733bb180cbee71265b5020a1d27e00bd9135a2ce51030acb4ab964                                                                   0.0s
+ => => extracting sha256:ff877827746c75e773edd6beba96ca65186a1940ef3ec984a75ea4938c838408                                                                   0.0s
+ => [stage-1 2/3] WORKDIR /app                                                                                                                              0.4s
+ => [build 2/5] WORKDIR /app                                                                                                                                0.4s
+ => [build 3/5] COPY pom.xml .                                                                                                                              0.0s
+ => [build 4/5] COPY src ./src                                                                                                                              0.0s
+ => [build 5/5] RUN mvn clean package -DskipTests -B                                                                                                       51.4s
+ => [stage-1 3/3] COPY --from=build /app/target/*.jar app.jar                                                                                               0.0s
+ => exporting to image                                                                                                                                      0.1s
+ => => exporting layers                                                                                                                                     0.0s
+ => => exporting manifest sha256:cc242bb95627ff8f29cf6b931dff3ae7e0fcc96554e5e779af34e43cf61124e2                                                           0.0s
+ => => exporting config sha256:9d876de9f1475b6fb9521447c94c887fe9ecdfbb439cf1929b13bfba7a9394b6                                                             0.0s
+ => => exporting attestation manifest sha256:6dcb63fb21d973c070149d70a7081468e754def9fca32a97d1e7e35659387ad0                                               0.0s
+ => => exporting manifest list sha256:58fd4852d145cceeba09478f563d5d18195f1f09b6959c70d9b3adb4ab8751c1                                                      0.0s
+ => => naming to docker.io/library/quad_management-backend:latest                                                                                           0.0s
+ => => unpacking to docker.io/library/quad_management-backend:latest                                                                                        0.0s
+ => resolving provenance for metadata file                                                                                                                  0.0s
+[+] Running 5/5
+ ✔ quad_management-backend                    Built                                                                                                         0.0s 
+ ✔ Network quad_management_quad-bike-network  Created                                                                                                       0.0s 
+ ✔ Volume quad_management_postgres-data       Created                                                                                                       0.0s 
+ ✔ Container quad-bike-db                     Created                                                                                                       0.0s 
+ ✔ Container quad-bike-backend                Created                                                                                                       0.0s 
+Attaching to quad-bike-backend, quad-bike-db
+quad-bike-db  | The files belonging to this database system will be owned by user "postgres".
+quad-bike-db  | This user must also own the server process.
+quad-bike-db  | 
+quad-bike-db  | The database cluster will be initialized with locale "en_US.utf8".
+quad-bike-db  | The default database encoding has accordingly been set to "UTF8".
+quad-bike-db  | The default text search configuration will be set to "english".
+quad-bike-db  | 
+quad-bike-db  | Data page checksums are disabled.
+quad-bike-db  | 
+quad-bike-db  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+quad-bike-db  | creating subdirectories ... ok
+quad-bike-db  | selecting dynamic shared memory implementation ... posix
+quad-bike-db  | selecting default max_connections ... 100
+quad-bike-db  | selecting default shared_buffers ... 128MB
+quad-bike-db  | selecting default time zone ... UTC
+quad-bike-db  | creating configuration files ... ok
+quad-bike-db  | running bootstrap script ... ok
+quad-bike-db  | sh: locale: not found
+quad-bike-db  | 2025-10-28 11:33:07.540 UTC [34] WARNING:  no usable system locales were found
+quad-bike-db  | performing post-bootstrap initialization ... ok
+quad-bike-db  | initdb: warning: enabling "trust" authentication for local connections
+quad-bike-db  | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+quad-bike-db  | syncing data to disk ... ok
+quad-bike-db  | 
+quad-bike-db  | 
+quad-bike-db  | Success. You can now start the database server using:
+quad-bike-db  | 
+quad-bike-db  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+quad-bike-db  | 
+quad-bike-db  | waiting for server to start....2025-10-28 11:33:07.837 UTC [40] LOG:  starting PostgreSQL 15.14 on aarch64-unknown-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+quad-bike-db  | 2025-10-28 11:33:07.838 UTC [40] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+quad-bike-db  | 2025-10-28 11:33:07.840 UTC [43] LOG:  database system was shut down at 2025-10-28 11:33:07 UTC
+quad-bike-db  | 2025-10-28 11:33:07.844 UTC [40] LOG:  database system is ready to accept connections
+quad-bike-db  |  done
+quad-bike-db  | server started
+quad-bike-db  | CREATE DATABASE
+quad-bike-db  | 
+quad-bike-db  | 
+quad-bike-db  | /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+quad-bike-db  | 
+quad-bike-db  | waiting for server to shut down....2025-10-28 11:33:07.963 UTC [40] LOG:  received fast shutdown request
+quad-bike-db  | 2025-10-28 11:33:07.964 UTC [40] LOG:  aborting any active transactions
+quad-bike-db  | 2025-10-28 11:33:07.965 UTC [40] LOG:  background worker "logical replication launcher" (PID 46) exited with exit code 1
+quad-bike-db  | 2025-10-28 11:33:07.965 UTC [41] LOG:  shutting down
+quad-bike-db  | 2025-10-28 11:33:07.966 UTC [41] LOG:  checkpoint starting: shutdown immediate
+quad-bike-db  | 2025-10-28 11:33:07.991 UTC [41] LOG:  checkpoint complete: wrote 921 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.008 s, sync=0.016 s, total=0.027 s; sync files=301, longest=0.005 s, average=0.001 s; distance=4238 kB, estimate=4238 kB
+quad-bike-db  | 2025-10-28 11:33:07.994 UTC [40] LOG:  database system is shut down
+quad-bike-db  |  done
+quad-bike-db  | server stopped
+quad-bike-db  | 
+quad-bike-db  | PostgreSQL init process complete; ready for start up.
+quad-bike-db  | 
+quad-bike-db  | 2025-10-28 11:33:08.081 UTC [1] LOG:  starting PostgreSQL 15.14 on aarch64-unknown-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+quad-bike-db  | 2025-10-28 11:33:08.081 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+quad-bike-db  | 2025-10-28 11:33:08.081 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+quad-bike-db  | 2025-10-28 11:33:08.084 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+quad-bike-db  | 2025-10-28 11:33:08.086 UTC [56] LOG:  database system was shut down at 2025-10-28 11:33:07 UTC
+quad-bike-db  | 2025-10-28 11:33:08.089 UTC [1] LOG:  database system is ready to accept connections
+quad-bike-backend  | no main manifest attribute, in app.jar
+quad-bike-backend exited with code 1 (restarting)
+quad-bike-backend exited with code 1 (restarting)
+quad-bike-backend  | no main manifest attribute, in app.jar
+quad-bike-backend  | no main manifest attribute, in app.jar
+quad-bike-backend exited with code 1 (restarting)
+quad-bike-backend  | no main manifest attribute, in app.jar
+quad-bike-backend exited with code 1 (restarting)
+quad-bike-backend  | no main manifest attribute, in app.jar
+quad-bike-backend exited with code 1 (restarting)
+quad-bike-backend  | no main manifest attribute, in app.jar
+quad-bike-backend exited with code 1 (restarting)
+quad-bike-backend  | no main manifest attribute, in app.jar
+quad-bike-backend exited with code 1 (restarting)
+quad-bike-backend  | no main manifest attribute, in app.jar
+quad-bike-backend exited with code 1 (restarting)
+quad-bike-backend  | no main manifest attribute, in app.jar
+quad-bike-backend exited with code 1 (restarting)
+quad-bike-backend  | no main manifest attribute, in app.jar
+quad-bike-backend exited with code 1 (restarting)
+quad-bike-backend  | no main manifest attribute, in app.jar
+quad-bike-backend exited with code 1 (restarting)
+quad-bike-backend  | no main manifest attribute, in app.jar
+quad-bike-backend exited with code 1 (restarting)
+quad-bike-db       | 2025-10-28 11:36:08.461 UTC [1] LOG:  received fast shutdown request
+quad-bike-db       | 2025-10-28 11:36:08.463 UTC [1] LOG:  aborting any active transactions
+quad-bike-db       | 2025-10-28 11:36:08.465 UTC [1] LOG:  background worker "logical replication launcher" (PID 59) exited with exit code 1
+quad-bike-db       | 2025-10-28 11:36:08.465 UTC [54] LOG:  shutting down
+quad-bike-db       | 2025-10-28 11:36:08.466 UTC [54] LOG:  checkpoint starting: shutdown immediate
+quad-bike-db       | 2025-10-28 11:36:08.475 UTC [54] LOG:  checkpoint complete: wrote 44 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.003 s, total=0.011 s; sync files=12, longest=0.002 s, average=0.001 s; distance=252 kB, estimate=252 kB
+quad-bike-db       | 2025-10-28 11:36:08.478 UTC [1] LOG:  database system is shut down
+quad-bike-db exited with code 0
+quad-bike-db exited with code 0
