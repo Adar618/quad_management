@@ -1,9 +1,11 @@
-
 package com.quadmgmt.web;
 
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.AccessDeniedException;
+import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.security.authorization.AuthorizationDeniedException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -25,19 +27,29 @@ public class GlobalExceptionHandler {
         ));
     }
 
-    // Option A: IllegalArgumentException -> 400 Bad Request
+    // Security exceptions - must return proper HTTP status codes
+    @ExceptionHandler(BadCredentialsException.class)
+    public ResponseEntity<Object> handleBadCredentials(BadCredentialsException ex) {
+        return problem(HttpStatus.UNAUTHORIZED, "UNAUTHORIZED", ex.getMessage(), "");
+    }
+
+    @ExceptionHandler({AccessDeniedException.class, AuthorizationDeniedException.class})
+    public ResponseEntity<Object> handleAccessDenied(Exception ex) {
+        return problem(HttpStatus.FORBIDDEN, "FORBIDDEN", "Access Denied", "");
+    }
+
+    // Business logic exceptions
     @ExceptionHandler(IllegalArgumentException.class)
     public ResponseEntity<Object> handleIllegalArgument(IllegalArgumentException ex) {
         return problem(HttpStatus.BAD_REQUEST, "BAD_REQUEST", ex.getMessage(), "");
     }
 
-    // Conflicts (e.g., duplicates signaled by service with IllegalStateException)
     @ExceptionHandler(IllegalStateException.class)
     public ResponseEntity<Object> handleIllegalState(IllegalStateException ex) {
         return problem(HttpStatus.CONFLICT, "CONFLICT", ex.getMessage(), "");
     }
 
-    // DB-level unique constraint violations
+    // Database constraints
     @ExceptionHandler(DataIntegrityViolationException.class)
     public ResponseEntity<Object> handleConstraint(DataIntegrityViolationException ex) {
         return problem(HttpStatus.CONFLICT, "CONSTRAINT_VIOLATION", "Duplicate or invalid data", "");
@@ -48,6 +60,7 @@ public class GlobalExceptionHandler {
         return problem(HttpStatus.BAD_REQUEST, "VALIDATION_ERROR", ex.getMessage(), "");
     }
 
+    // Catch-all for unexpected errors
     @ExceptionHandler(Exception.class)
     public ResponseEntity<Object> handleGeneric(Exception ex) {
         return problem(HttpStatus.INTERNAL_SERVER_ERROR, "INTERNAL_ERROR", ex.getMessage(), "");

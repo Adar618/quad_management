@@ -2,7 +2,7 @@ spring:
   application:
     name: quad-management
   profiles:
-    active: prod
+    active: dev
 
 jwt:
   secret: ${JWT_SECRET:mySuperSecureJWTKeyThatIsAtLeast32BytesLong123andImgonnamakesureitsevenlongerIamtypingjustforthesakeoftyping123456Ihopeitmadeit234567!}

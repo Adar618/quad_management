@@ -20,57 +20,42 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @AutoConfigureMockMvc
 class AuthAndTokenFlowTests {
-    
-    @Autowired 
+
+    @Autowired
     private MockMvc mvc;
-    
-    @Autowired 
+
+    @Autowired
     private ObjectMapper om;
 
     private String login(String username, String password) throws Exception {
-        String body = om.writeValueAsString(
-            Map.of("username", username, "password", password)
-        );
-        
-        String json = mvc.perform(
-                post("/auth/login")
-                    .contentType(MediaType.APPLICATION_JSON)
-                    .content(body)
-            )
-            .andExpect(status().isOk())
-            .andReturn()
-            .getResponse()
-            .getContentAsString();
-        
+        String body = om.writeValueAsString(Map.of("username", username, "password", password));
+        String json = mvc.perform(post("/auth/login")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(body))
+                .andExpect(status().isOk())
+                .andReturn()
+                .getResponse()
+                .getContentAsString();
         JsonNode node = om.readTree(json);
         return node.get("accessToken").asText();
     }
 
-    @Test 
+    @Test
     void admin_can_login_and_call_me() throws Exception {
         String token = login("admin", "secret");
-        
-        mvc.perform(
-                get("/api/v1/me")
-                    .header("Authorization", "Bearer " + token)
-            )
-            .andExpect(status().isOk())
-            .andExpect(jsonPath("$.username").value("admin"));
-        
+        mvc.perform(get("/api/v1/me")
+                        .header("Authorization", "Bearer " + token))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.username").value("admin"));
         assertThat(token).isNotBlank();
     }
 
-    @Test 
+    @Test
     void wrong_password_rejected() throws Exception {
-        String body = om.writeValueAsString(
-            Map.of("username", "admin", "password", "bad")
-        );
-        
-        mvc.perform(
-                post("/auth/login")
-                    .contentType(MediaType.APPLICATION_JSON)
-                    .content(body)
-            )
-            .andExpect(status().isUnauthorized());
+        String body = om.writeValueAsString(Map.of("username", "admin", "password", "bad"));
+        mvc.perform(post("/auth/login")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(body))
+                .andExpect(status().isUnauthorized());
     }
 }
